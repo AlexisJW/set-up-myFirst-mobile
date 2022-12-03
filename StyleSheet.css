@@ -127,4 +127,189 @@ body {
     display: grid;
     grid-template-columns: auto;
   }
+
+  .work-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    width: 327px;
+    margin: 50px auto;
+    border-radius: 20px;
+  }
+
+  .align-item {
+    margin: 15px 20px auto 20px;
+  }
+
+  .work-info-container h1 {
+    color: #172b4d;
+    font-weight: 700;
+    line-height: 44px;
+  }
+
+  .work-description {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .work-description .company {
+    color: #344563;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+
+  .work-description .position,
+  .work-description .year {
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
+    font-weight: 600;
+  }
+
+  .separator {
+    width: 8px;
+    height: 8px;
+    background-color: #c1c7d0;
+    border-radius: 50%;
+  }
+
+  .project-description p {
+    color: #344563;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .technologie-label {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .technologie-label li {
+    background-color: #ebebff;
+    padding: 2px 15px;
+    border-radius: 8px;
+    color: #6070ff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .global-skills-title p {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .global-skills-secondary p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .see-project {
+    width: 124px;
+    height: 48px;
+    background-color: #fff;
+    border: 1px solid #6070ff;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #396df2;
+    margin-bottom: 15px;
+  }
+
+  .see-project:hover {
+    background-color: #6070ff;
+    color: #fff;
+  }
+
+  .myself-containers {
+    background-color: #fff;
+    border-top-right-radius: 80px;
+    width: 375px;
+    margin: auto;
+  }
+
+  #about-description-container {
+    padding: 0;
+  }
+
+  #about-title {
+    margin-top: 20px;
+  }
+
+  #about-social-media-icons {
+    margin: 22px auto;
+  }
+
+  .download-resume {
+    width: 162px;
+    height: 48px;
+    margin: 12px auto;
+  }
+
+  .global-skills-title {
+    width: 327px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .list-closed {
+    border: solid #dfe1e6;
+    border-width: 0 0 1px 0;
+  }
+
+  .down-arrow,
+  .right-arrow {
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #acb7c3;
+    border-top: 2px solid #acb7c3;
+    margin-right: 40px;
+  }
+
+  .right-arrow {
+    transform: rotate(45deg);
+  }
+
+  .down-arrow {
+    transform: rotate(135deg);
+  }
+
+  .global-skills-secondary li {
+    width: 303px;
+    height: 67px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    background-color: #f7f7f9;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+
+  .global-skills-secondary img {
+    width: 48px;
+    height: 48px;
+    margin-left: 10px;
+  }
+
+  .all-skills-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+  }
 }
