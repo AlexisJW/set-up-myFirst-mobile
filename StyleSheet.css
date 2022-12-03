@@ -39,6 +39,10 @@ body {
     margin-left: 8px;
   }
 
+  .lest-connect-text #button-connect {
+    margin-bottom: 8px;
+  }
+
   #navbar {
     gap: 3px;
     justify-content: center;
