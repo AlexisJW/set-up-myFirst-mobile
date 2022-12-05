@@ -185,12 +185,46 @@ body {
   }
 
   .technologie-label {
+    padding: 18px;
     display: flex;
-    justify-content: flex-start;
-    gap: 8px;
+    flex-direction: row;
     align-items: center;
-    list-style-type: none;
-    padding: 0;
+    padding: 4px 12px;
+
+    width: 53px;
+    height: 24px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+
+    width: 53px;
+    height: 24px;
+
+    /* Primary/B50 */
+
+    background: #EBEBFF;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .html {
+    padding: 4px 12px;
+    
+  }
+
+  .css {
+    padding: 4px 12px;
+  }
+
+  .java {
+    padding: 4px 12px;
   }
 
   .technologie-label li {
