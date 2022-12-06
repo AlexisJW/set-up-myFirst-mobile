@@ -204,19 +204,27 @@
         </div>
       </div>
     </section>
-
-    <section class="contact">
-      <header>
-        <h2>Contact me</h2>
-        <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
-        </p>
-      </header>
-      <form action="#" method="post">
-        <input type="text" placeholder="Enter Full Name" id="user-name">
-        <input type="email" name="" placeholder="Enter e-mail" id="user-e-mail">
-        <textarea name="text-area" id="text-area" cols="30" rows="10"></textarea>
-        <button>Get in Touch</button>
+    <section class="contact-container">
+       <h2 id="contact-me"> Contact me </h2>
+       <p id="contact-paragraph"> If you have an application you are interested in developing, 
+          a feature that you need built or a project that needs coding. 
+          I’d love to help with it </p>
+      <center>
+      <form action="https://formspree.io/f/xyyvrjdz" method="post">
+        <div id="container-input-name">
+          <input id="input-name" name="username" type="text" maxlength="10" placeholder="Enter your Name" required>
+        </div>
+        <div id="container-input-email">
+         <input id="input-email" name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter e-mail" required>
+        </div>
+        <div id="container-text-area">
+          <textarea id="input-text-area" maxlength="500" name="text-area" cols="30" rows="10" placeholder="Write your message here"></textarea>
+        </div>
+        <button class="see-project align-item" id="btn-touch">
+          Get in Touch
+        </button>
       </form>
+      </center>
     </section>
   </body>
 </html>

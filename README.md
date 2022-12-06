@@ -73,6 +73,8 @@
 
 - **[Set up a linter for HTML and CSS]**
 - **[Build the first 2 sections of the mobile website using the template from figma]**
+- **[Add a contact form to your portfolio and the portfolio of your coding partner]**
+- **[Make sure that you guide your users' experience in a way that helps them fill in the form without frustration]**
 - **[Open a pull request.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

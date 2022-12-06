@@ -346,4 +346,116 @@ body {
     padding: 0;
     margin-bottom: 40px;
   }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    
+    width: 375px;
+    height: 779px;
+    top: 5410px;
+    font-family: 'Poppins';
+
+    background-image: url("./image/contact-shapes-mobile.png"), url("./image/background-contact.png");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  #contact-me {
+    font-style: normal;
+    align-items: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 103px;
+  }
+
+  #contact-paragraph {
+    width: 327px;
+    height: 102px;
+    left: 24px;
+    top: 4802px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #EBEBFF;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 87px;
+  }
+
+  #container-input-name, #container-input-email {
+    height: 48px;
+    width: 327px;
+    left: 0px;
+    border-radius: 8px;
+    top: 4802px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: #FFFFFF;
+    border: 1px solid #CFD8DC;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  #input-name, #input-email {
+    height: 18px;
+    width: 273px;
+    left: 16px;
+    top: 15px;
+    border: 0px transparent;
+    right: 38px;
+    top: calc(50% - 18px/2);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  #container-text-area {
+    width: 327px;
+    height: 170px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: #FFFFFF;
+    border: 1px solid #CFD8DC;
+    border-radius: 8px;
+    margin-bottom: 34px;
+  }
+
+  #input-text-area {
+    height: 140px;
+    width: 273px;
+    left: 16px;
+    top: 15px;
+    border: 0px transparent;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    resize: none;
+  }
+
+  #btn-touch {
+    margin-right: 211px;
+    cursor: pointer;
+  }
+
 }
