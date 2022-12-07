@@ -189,34 +189,17 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 4px 12px;
-
     width: 53px;
     height: 24px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 4px 12px;
-
-    width: 53px;
-    height: 24px;
-
-    /* Primary/B50 */
-
-    background: #EBEBFF;
+    background: #ebebff;
     border-radius: 8px;
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
   }
 
   .html {
-    padding: 4px 12px;
-    
+    padding: 4px 12px; 
   }
 
   .css {
@@ -353,12 +336,10 @@ body {
     align-items: center;
     justify-content: center;
     margin: 50px auto;
-    
     width: 375px;
     height: 779px;
     top: 5410px;
     font-family: 'Poppins';
-
     background-image: url("./image/contact-shapes-mobile.png"), url("./image/background-contact.png");
     background-position: right;
     background-repeat: no-repeat;
@@ -371,7 +352,7 @@ body {
     font-size: 40px;
     line-height: 52px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 103px;
   }
 
@@ -385,7 +366,7 @@ body {
     font-size: 20px;
     line-height: 28px;
     text-align: center;
-    color: #EBEBFF;
+    color: #ebebff;
     margin-left: 24px;
     margin-right: 24px;
     margin-bottom: 87px;
@@ -397,13 +378,10 @@ body {
     left: 0px;
     border-radius: 8px;
     top: 4802px;
-    left: 0px;
     right: 0px;
-    top: 0px;
     bottom: 0px;
-    background: #FFFFFF;
-    border: 1px solid #CFD8DC;
-    border-radius: 8px;
+    background: #ffffff;
+    border: 1px solid #cfd8dc;
     margin-bottom: 20px;
   }
 
@@ -411,10 +389,9 @@ body {
     height: 18px;
     width: 273px;
     left: 16px;
-    top: 15px;
     border: 0px transparent;
     right: 38px;
-    top: calc(50% - 18px/2);
+    top: calc(50%-18px/2);
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -433,8 +410,8 @@ body {
     right: 0px;
     top: 0px;
     bottom: 0px;
-    background: #FFFFFF;
-    border: 1px solid #CFD8DC;
+    background: #ffffff;
+    border: 1px solid #cfd8dc;
     border-radius: 8px;
     margin-bottom: 34px;
   }
@@ -457,5 +434,4 @@ body {
     margin-right: 211px;
     cursor: pointer;
   }
-
 }
