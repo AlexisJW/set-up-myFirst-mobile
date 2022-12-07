@@ -185,12 +185,29 @@ body {
   }
 
   .technologie-label {
+    padding: 18px;
     display: flex;
-    justify-content: flex-start;
-    gap: 8px;
+    flex-direction: row;
     align-items: center;
-    list-style-type: none;
-    padding: 0;
+    width: 53px;
+    height: 24px;
+    background: #ebebff;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .html {
+    padding: 4px 12px;
+  }
+
+  .css {
+    padding: 4px 12px;
+  }
+
+  .java {
+    padding: 4px 12px;
   }
 
   .technologie-label li {
@@ -311,5 +328,102 @@ body {
     list-style-type: none;
     padding: 0;
     margin-bottom: 40px;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    width: 375px;
+    height: 779px;
+    top: 5410px;
+    background-image: url("./image/contact-shapes-mobile.png"), url("./image/background-contact.png");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  #contact-me {
+    font-style: normal;
+    align-items: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
+    margin-top: 103px;
+  }
+
+  #contact-paragraph {
+    width: 327px;
+    height: 102px;
+    left: 24px;
+    top: 4802px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 87px;
+  }
+
+  #container-input-name,
+  #container-input-email {
+    height: 48px;
+    width: 327px;
+    border-radius: 8px;
+    top: 4802px;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    margin-bottom: 20px;
+  }
+
+  #input-name,
+  #input-email {
+    height: 18px;
+    width: 273px;
+    left: 16px;
+    border: transparent;
+    right: 38px;
+    top: calc(50% - 18px / 2);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  #container-text-area {
+    width: 327px;
+    height: 170px;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    margin-bottom: 34px;
+  }
+
+  #input-text-area {
+    height: 140px;
+    width: 273px;
+    left: 16px;
+    top: 15px;
+    border: transparent;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    resize: none;
+  }
+
+  #btn-touch {
+    margin-right: 211px;
+    cursor: pointer;
   }
 }
