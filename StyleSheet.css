@@ -197,7 +197,7 @@ body {
     order: 0;
     flex-grow: 0;
   }
-
+  
   .html {
     padding: 4px 12px; 
   }
@@ -352,7 +352,7 @@ body {
     font-size: 40px;
     line-height: 52px;
     text-align: center;
-    color: #ffffff;
+    color: #fff;
     margin-top: 103px;
   }
 
@@ -372,7 +372,8 @@ body {
     margin-bottom: 87px;
   }
 
-  #container-input-name, #container-input-email {
+  #container-input-name, 
+  #container-input-email {
     height: 48px;
     width: 327px;
     left: 0px;
@@ -380,18 +381,19 @@ body {
     top: 4802px;
     right: 0px;
     bottom: 0px;
-    background: #ffffff;
+    background: #fff;
     border: 1px solid #cfd8dc;
     margin-bottom: 20px;
   }
 
-  #input-name, #input-email {
+  #input-name, 
+  #input-email {
     height: 18px;
     width: 273px;
     left: 16px;
     border: 0px transparent;
     right: 38px;
-    top: calc(50%-18px/2);
+    top: calc(50% - 18px / 2);
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -410,7 +412,7 @@ body {
     right: 0px;
     top: 0px;
     bottom: 0px;
-    background: #ffffff;
+    background: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
     margin-bottom: 34px;
