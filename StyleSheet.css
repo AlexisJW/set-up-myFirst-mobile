@@ -197,7 +197,7 @@ body {
     order: 0;
     flex-grow: 0;
   }
-  
+
   .html {
     padding: 4px 12px;
   }
@@ -371,7 +371,8 @@ body {
     margin-bottom: 87px;
   }
 
-  #container-input-name, #container-input-email {
+  #container-input-name,
+  #container-input-email {
     height: 48px;
     width: 327px;
     border-radius: 8px;
@@ -381,7 +382,8 @@ body {
     margin-bottom: 20px;
   }
 
-  #input-name, #input-email {
+  #input-name,
+  #input-email {
     height: 18px;
     width: 273px;
     left: 16px;
@@ -412,7 +414,7 @@ body {
     width: 273px;
     left: 16px;
     top: 15px;
-    border: 0px transparent;
+    border: transparent;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
