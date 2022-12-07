@@ -162,7 +162,8 @@ body {
     line-height: 16px;
   }
 
-  .work-description .position, .work-description .year {
+  .work-description .position,
+  .work-description .year {
     font-size: 13px;
     line-height: 16px;
     color: #7a869a;
@@ -198,7 +199,7 @@ body {
   }
   
   .html {
-    padding: 4px 12px; 
+    padding: 4px 12px;
   }
 
   .css {
@@ -288,7 +289,8 @@ body {
     border-width: 0 0 1px 0;
   }
 
-  .down-arrow, .right-arrow {
+  .down-arrow,
+  .right-arrow {
     width: 7px;
     height: 7px;
     border-right: 2px solid #acb7c3;
@@ -337,7 +339,6 @@ body {
     width: 375px;
     height: 779px;
     top: 5410px;
-    font-family: 'Poppins';
     background-image: url("./image/contact-shapes-mobile.png"), url("./image/background-contact.png");
     background-position: right;
     background-repeat: no-repeat;
@@ -373,11 +374,8 @@ body {
   #container-input-name, #container-input-email {
     height: 48px;
     width: 327px;
-    left: 0px;
     border-radius: 8px;
     top: 4802px;
-    right: 0px;
-    bottom: 0px;
     background: #fff;
     border: 1px solid #cfd8dc;
     margin-bottom: 20px;
@@ -387,10 +385,9 @@ body {
     height: 18px;
     width: 273px;
     left: 16px;
-    border: 0px transparent;
+    border: transparent;
     right: 38px;
     top: calc(50% - 18px / 2);
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -404,10 +401,6 @@ body {
   #container-text-area {
     width: 327px;
     height: 170px;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
     background: #fff;
     border: 1px solid #cfd8dc;
     border-radius: 8px;
@@ -420,7 +413,6 @@ body {
     left: 16px;
     top: 15px;
     border: 0px transparent;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
