@@ -162,8 +162,7 @@ body {
     line-height: 16px;
   }
 
-  .work-description .position,
-  .work-description .year {
+  .work-description .position, .work-description .year {
     font-size: 13px;
     line-height: 16px;
     color: #7a869a;
@@ -289,8 +288,7 @@ body {
     border-width: 0 0 1px 0;
   }
 
-  .down-arrow,
-  .right-arrow {
+  .down-arrow, .right-arrow {
     width: 7px;
     height: 7px;
     border-right: 2px solid #acb7c3;
@@ -372,8 +370,7 @@ body {
     margin-bottom: 87px;
   }
 
-  #container-input-name,
-  #container-input-email {
+  #container-input-name, #container-input-email {
     height: 48px;
     width: 327px;
     left: 0px;
@@ -386,8 +383,7 @@ body {
     margin-bottom: 20px;
   }
 
-  #input-name,
-  #input-email {
+  #input-name, #input-email {
     height: 18px;
     width: 273px;
     left: 16px;
