@@ -152,7 +152,7 @@
   .language-list li {
     flex-direction: column;
     height: fit-content;
-	padding: 20px 0;
+    padding: 20px;
   }
 
   .frameworks,
