@@ -35,7 +35,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio: setup and mobile first] <a name="about-project"></a>
+# 📖 [Portfolio: setup and mobile first / Desktop] <a name="about-project"></a>
 **[Portfolio: setup and mobile first]** Is a project to learn the ropes about designing mobile.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -74,7 +74,7 @@
 - **[Set up a linter for HTML and CSS]**
 - **[Build the first 2 sections of the mobile website using the template from figma]**
 - **[Add a contact form to your portfolio and the portfolio of your coding partner]**
-- **[Make sure that you guide your users' experience in a way that helps them fill in the form without frustration]**
+- **[Use media queries to make sure that your website displays correctly on desktop screens.]**
 - **[Open a pull request.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
