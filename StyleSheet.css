@@ -422,25 +422,7 @@ li {
   padding: 0 24px 30px 24px;
 }
 
-.contact-form {
-  padding-left: 12px;
-}
-
-#name,
-#user-email,
-#text-area {
-  width: 85%;
-  margin: 12px 24px;
-  border: 1px solid #cfd8dc;
-  padding: 1rem 12px;
-}
-
-#text-area {
-  resize: none;
-  height: auto;
-}
-
-.form-btn {
+.button-submit {
   width: 140px;
   height: 48px;
   margin-left: 24px;
@@ -460,12 +442,30 @@ li {
   border: 1px solid #cfd8dc;
 }
 
-.form-btn:hover {
+.button-submit:hover {
   color: #fff;
   background-color: #396df2;
   cursor: pointer;
 }
 
-.form-btn:active {
+.button-submit:active {
   background-color: #172b4d;
+}
+
+.contact-form {
+  padding-left: 12px;
+}
+
+#name,
+#user-email,
+#text-area {
+  width: 85%;
+  margin: 12px 24px;
+  border: 1px solid #cfd8dc;
+  padding: 1rem 12px;
+}
+
+#text-area {
+  resize: none;
+  height: auto;
 }
