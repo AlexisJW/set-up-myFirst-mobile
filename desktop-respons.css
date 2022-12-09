@@ -11,14 +11,14 @@
   .menu-phone {
     display: none;
   }
-  
+
   .header-containers {
-	background-color: #fff;
+    background-color: #fff;
   }
 
   .logo {
     padding-left: 143px;
-	color: #6070ff;
+    color: #6070ff;
   }
 
   .navbar-items {
@@ -30,7 +30,7 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    color:  #6070ff;
+    color: #6070ff;
     text-decoration: none;
     padding: 0 12px;
   }
