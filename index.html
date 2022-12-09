@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="StyleSheet.css" />
-	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title> Portfolio-Microverse </title>
-  </head>
-  <body>
-    <header class="containers">
-      <div class="navbar-container">
-        <a class="logo" href="#"> AlexisJW </a>
-        <nav id="navbar">
-          <a href="#portfolio"> Portfolio </a>
-          <a href="#about"> About </a>
-          <a href="contact"> Contact </a>
-		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			<i class="fa fa-bars"></i>
-		  </a>
-        </nav>
-      </div>
-     <section class="containers-works-section">
-     <div class="work-container">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Alexis/Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-style.css">
+</head>
+<body>
+  <header class="header-containers">
+    <nav>
+      <a class="logo"> Alexis </a> 
+      <ul class="navbar-items">
+        <li><a href="#"> Portfolio </a></li>
+        <li><a href="#"> About </a></li>
+        <li><a href="#"> Contact </a></li>
+      </ul>
+      <button class="menu-phone">
+	   <img src="./image/Enabled.png" alt="">
+	  </button>
+    </nav>
+  </header>
+
+  <section class="header-at-top">
+	<h2 class="primary-text"> I’m Alexis, Glad to see you! </h2>
+	<p class="text-about"> I’m a software developer! I can help you build a product ,
+	  feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+	<h2 class="social"> LET'S CONNECT </h2>    
+	<div class="social-media-icons">
+	  <ul>
+		<li><a href="https://twitter.com/" target="_blank"><img src="./image/Vector-twitter.svg" alt="twitter icon"></a></li>
+		<li><a href="https://www.linkedin.com/in/jean-walner-alexis-b05539175/" target="_blank"><img src="./image/linkedin-icon.svg" alt="Linkedin icon"></a></li>
+		<li><a href="https://github.com/AlexisJW" target="_blank"><img src="./image/Vector-m.svg" alt="icon"></a></li>
+		<li><a href="https://github.com/AlexisJW" target="_blank"><img src="./image/Vector-github.svg" alt="Github icon"></a></li>
+		<li><a href="https://web.facebook.com/profile.php?id=100001094813889" target="_blank"><img src="./image/Vector.svg" alt="Fingers icon"></a></li>
+	  </ul>    
+	</div>     
+  </section>
+  <section class="containers-works-section">
+   <div class="work-container">
 	 <div class="box">
-		 <img src="./img/Snapshoot Portfolio.png" alt="snapshot poortfolio" class="snapshot">
-		 <div class="details">
+		 <img src="./image/Snapshoot Portfolio.png" alt="" class="snapshot">
+		 <div class="more-details">
 		   <div class="work-description-align-item">
 			   <div class="works-elements">
-				   <h2 class="project-title">Tonic</h2>
+				   <h2 class="project-title"> Tonic </h2>
 				   <div class="frame-client">
 					   <span class="client">
 						   CANOPY</span>
-					   <img src="./img/Counter.png" alt="" class="counter">
-					   <span class="role">Back End Dev</span>
-					   <img src="./img/Counter.png" alt="" class="counter">
-					   <span class="year">2015</span>
+					   <img src="./image/Counter.png" alt="">
+					   <span class="role"> Back End Dev </span>
+					   <img src="./image/Counter.png" alt="">
+					   <span class="year"> 2015 </span>
 				   </div>
 			   </div>
 		   </div>
@@ -52,16 +68,16 @@
 		 </div>
 	   </div>
 	   <div class="box">
-		 <img src="./img/Snapshoot Portfolio (1).png" alt="snapshot poortfolio" class="snapshot">
-		  <div class="details">
+		 <img src="./image/Snapshoot Portfolio (1).png" alt="snapshot poortfolio" class="snapshot">
+		  <div class="more-details">
 			 <div class="work-description-align-item">
 			   <div class="works-elements">
 				 <h2 class="project-title"> Multi-Post Stories </h2>
 				 <div class="frame-client">
 					<span class="client"> CANOPY </span>
-					<img src="./img/Counter.png" alt="" class="counter">
+					<img src="./image/Counter.png" alt="" class="counter">
 					<span class="role"> Back End Dev </span>
-					<img src="./img/Counter.png" alt="" class="counter">
+					<img src="./image/Counter.png" alt="" class="counter">
 					<span class="year"> 2015 </span>
 				 </div>
 			   </div>
@@ -77,53 +93,47 @@
 	   </div>
 
 	 <div class="box">
-		 <img src="./img/Snapshoot Portfolio (2).png" alt="" class="snapshot">
-		 <div class="details">
+		 <img src="./image/Snapshoot Portfolio (2).png" alt="" class="snapshot">
+		 <div class="more-details">
 		   <div class="work-description-align-item">
 				 <div class="works-elements">
-					 <h2 class="project-title">Tonic</h2>
+					 <h2 class="project-title"> Tonic </h2>
 					 <div class="frame-client">
 						 <span class="client">
 							 CANOPY</span>
-						 <img src="./img/Counter.png" alt="" class="counter">
-						 <span class="role">Back End Dev</span>
-						 <img src="./img/Counter.png" alt="" class="counter">
+						 <img src="./image/Counter.png" alt="" class="counter">
+						 <span class="role"> Back End Dev </span>
+						 <img src="./image/Counter.png" alt="" class="counter">
 						 <span class="year">2015</span>
 					 </div>
 				 </div>
 			 </div>
-			 <span class="details">
-					 A daily selection of privately personalized reads; no accounts or sign-ups required.
-			 </span>
+			 <span class="details"> A daily selection of privately personalized reads; no accounts or sign-ups required. </span>
 			 <ul class="technologie-label">
-				 <li>html</li>
-				 <li>css</li>
-				 <li>javaScript</li>
+				 <li> html </li>
+				 <li> css </li>
+				 <li> javaScript </li>
 			 </ul>
-			 <button class="see-project">See Project</button>
+			 <button class="see-project"> See Project </button>
 		 </div>
 	 </div>
 
 	 <div class="box">
-		 <img src="./img/Snapshoot Portfolio (3).png" alt="" class="snapshot">
-		 <div class="details">
+		 <img src="./image/Snapshoot Portfolio (3).png" alt="" class="snapshot">
+		 <div class="more-details">
 		   <div class="work-description-align-item">
 			   <div class="works-elements">
-				   <h2 class="project-title">Multi-Post
-					   Stories</h2>
+				   <h2 class="project-title"> Multi-Post Stories </h2>
 				   <div class="frame-client">
-					   <span class="client">
-						   CANOPY</span>
-					   <img src="./img/Counter.png" alt="" class="counter">
-					   <span class="role">Back End Dev</span>
-					   <img src="./img/Counter.png" alt="" class="counter">
-					   <span class="year">2015</span>
+					   <span class="client"> CANOPY </span>
+					   <img src="./image/Counter.png" alt="" class="counter">
+					   <span class="role"> Back End Dev </span>
+					   <img src="./image/Counter.png" alt="" class="counter">
+					   <span class="year"> 2015 </span>
 				   </div>
 			   </div>
 		   </div>
-		   <span class="details">
-				   A daily selection of privately personalized reads; no accounts or sign-ups required.
-		   </span>
+		   <span class="details"> A daily selection of privately personalized reads; no accounts or sign-ups required. </span>
 		   <ul class="technologie-label">
 			   <li> html </li>
 			   <li> css </li>
@@ -134,87 +144,70 @@
 	 </div>
     </div>
    </section>
-    <section id="about">
-      <div class="myself-containers">
-        <div id="about-description-container" class="headline align-item">
-          <section id="about-description">
-            <h1 id="about-title" class="section-title">About MySelf</h1>
-            <p class="headline-text"> Hello I'm a software developer! I can help you build a product , feature or website Look through some 
-              of my work and experience! 
-              If you like what you see and have a project you need coded, don't hestiate to contact me.
-            </p>
-          </section>
-		   <section>
-              <div class="lest-connect-text">
-                <p> LET'S CONNECT </p>
+   <section class="about">
+      <div class="intro">
+          <h2 class="title"> About Myself </h2>
+          <p class="description">
+              Hello I’m a software developer! I can help you build a product , feature or 
+              website. Look through some of my work and experience! If you like what you
+               see and have a project you need coded, don’t hestiate to contact me.
+          </p>
+          <div class="social-media">
+              <span class="connect"> LET'S CONNECT </span>
+              <div class="social-media-icons2">
+                  <ul>
+                     <li><a href="https://twitter.com/" target="_blank"><img src="./image/Vector-twitter.svg" alt="twitter icon"></a></li>
+					 <li><a href="https://www.linkedin.com/in/jean-walner-alexis-b05539175/" target="_blank"><img src="./image/linkedin-icon.svg" alt="Linkedin icon"></a></li>
+					 <li><a href="https://github.com/AlexisJW" target="_blank"><img src="./image/Vector-m.svg" alt="icon"></a></li>
+					 <li><a href="https://github.com/AlexisJW" target="_blank"><img src="./image/Vector-github.svg" alt="Github icon"></a></li>
+					 <li><a href="https://web.facebook.com/profile.php?id=100001094813889" target="_blank"><img src="./image/Vector.svg" alt="Fingers icon"></a></li>
+                  </ul>    
               </div>
-              <ul class="link-media">
-                <li><a href="https://twitter.com/" target="_blank"><img src="./image/Vector-twitter.svg" alt="twitter icon"></a></li>
-                <li><a href="https://www.linkedin.com/in/jean-walner-alexis-b05539175/" target="_blank"><img src="./image/linkedin-icon.svg" alt="Linkedin icon"></a></li>
-                <li><a href="https://github.com/AlexisJW" target="_blank"><img src="./image/Vector-m.svg" alt="icon"></a></li>
-                <li><a href="https://github.com/AlexisJW" target="_blank"><img src="./image/Vector-github.svg" alt="Github icon"></a></li>
-                <li><a href="https://web.facebook.com/profile.php?id=100001094813889" target="_blank"><img src="./image/Vector.svg" alt="Fingers icon"></a></li>
-              </ul>
-			  <button class="see-project download-resume"> Get my Resume </button>
-          </section>
-          <section>
-            <div class="all-skills-container">
-              <ul>
-                <li class="global-skills-title">
-                  <p> Languages </p>
-                  <div class="down-arrow"></div>
-                </li>
-                <li>
-                  <ul class="global-skills-secondary">
-                    <li>
-                      <img src="./image/icon-javascript.png">
-                      <p> JavaScript </p>
-                    </li>
-                    <li>
-                      <img src="./image/html-icon.png">
-                      <p> HTML </p>
-                    </li>
-                    <li>
-                      <img src="./image/css-icon.png">
-                      <p> CSS </p>
-                    </li>
-                  </ul>
-                </li>
-                <li class="global-skills-title list-closed">
-                  <p> Frameworks </p>
-                  <div class="right-arrow"></div>
-                </li>
-                <li class="global-skills-title list-closed">
-                  <p> Skills </p>
-                  <div class="right-arrow"></div>
-                </li>
-              </ul>
-            </div>
-          </section>
-        </div>
+          </div>
+          <button class="see-project"> Get My Resume </button>
       </div>
-    </section>
-    <section class="contact-container">
-       <h2 id="contact-me"> Contact me </h2>
-       <p id="contact-paragraph"> If you have an application you are interested in developing, 
-          a feature that you need built or a project that needs coding. 
-          I’d love to help with it </p>
-      <center>
-      <form action="https://formspree.io/f/xyyvrjdz" method="post">
-        <div id="container-input-name">
-          <input id="input-name" name="username" type="text" maxlength="10" placeholder="Enter your Name" required>
-        </div>
-        <div id="container-input-email">
-         <input id="input-email" name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter e-mail" required>
-        </div>
-        <div id="container-text-area">
-          <textarea id="input-text-area" maxlength="500" name="text-area" cols="30" rows="10" placeholder="Write your message here"></textarea>
-        </div>
-        <button class="see-project align-item" id="btn-touch">
-          Get in Touch
-        </button>
-      </form>
-      </center>
-    </section>
-  </body>
+  
+      <ul class="language-program">
+           <li>
+              <span class="language-title"> LANGUAGES </span>
+              <button class="chevron-button">
+                 <img src="./image/chevron-down.png" alt="" class="chevron">
+              </button>
+			  <ul class="language-list">
+				  <li><img src="./image/JS-icon.png" alt="" class="language-icon"><span class="language-name"> JavaScript </span></li>
+				  <li><img src="./image/HTML5-icon.png" alt="" class="language-icon"><span class="language-name"> HTML </span></li>
+				  <li><img src="./image/CSS-icon.png" alt="" class="language-icon"><span class="language-name"> CSS </span></li>
+			  </ul>
+           </li>
+           <li>
+		     <div class="frameworks">
+			  <span class="frameworks-title"> Frameworks </span>
+			   <button class="chevron-button">
+			   <img src="./image/chevron-right.png" alt="" class="chevron">
+				</button>
+		     </div>
+            </li>
+            <li>
+			  <div class="skills">
+			    <span class="skills-title"> Skills </span>
+			    <button class="chevron-button">
+			    <img src="./image/chevron-right.png" alt="" class="chevron">
+			    </button>
+			  </div>
+		    </li>
+      </ul>
+      </div>
+  </section>
+  <section class="contact">
+	  <h2> Contact me </h2>
+	  <p> If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it  </p>
+
+	  <form action="https://formspree.io/f/xyyvrjdz" method="post" class="contact-form">
+		 <input type="text" name="name" placeholder="Enter your name" id="name" maxlength=30 required>
+		 <input type="email" name="user-email" placeholder="Enter your e-mail" id="user-email" required>
+		 <textarea name="message" id="text-area" cols="30" rows="10" placeholder="Write your message here" maxlength=500 required></textarea>
+		 <button type="submit" class="button-submit"> Get in Touch </button>
+	   </form>
+  </section>
+</body>
 </html>
