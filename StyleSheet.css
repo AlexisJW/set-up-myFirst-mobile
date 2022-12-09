@@ -1,3 +1,7 @@
+body {
+  background-color: #e5e5e5;
+}
+
 *,
 *::before,
 *::after {
@@ -109,6 +113,9 @@ li {
   border-radius: 16px;
   gap: 16px;
   align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
 }
 
 .snapshot {
@@ -233,6 +240,9 @@ li {
   padding: 114px 24px;
   gap: 24px;
   width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
 }
 
 .intro {
