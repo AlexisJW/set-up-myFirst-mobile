@@ -45,20 +45,20 @@
 
   .text-about {
     padding: 0 260px;
-	animation-duration: 3s;
-	animation-name: slidein;
+    animation-duration: 3s;
+    animation-name: slidein;
   }
-  
+ 
   @keyframes slidein {
-   from {
-     margin-left: 100%;
-     width: 300%;
-   }
+     from {
+       margin-left: 100%;
+       width: 300%;
+     }
 
-   to {
-     margin-left: 0%;
-     width: 100%;
-   }
+     to {
+       margin-left: 0%;
+       width: 100%;
+     }
   }
 
   .work-container {
@@ -268,7 +268,7 @@
     cursor: pointer;
     -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
-    transform: scale(1.2); 
+    transform: scale(1.2);
   }
 
   .button-submit:active {
@@ -278,11 +278,11 @@
   .box img {
     transition: transform 2s;
   }
-  
+ 
   .box img:hover {
     transform: scale(112%);
   }
- }
+}
 
 @media screen and (max-width: 768px) {
   .navbar-items {

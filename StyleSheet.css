@@ -70,24 +70,20 @@ nav {
   padding: 0 24px;
   color: #344563;
   margin-top: 14px;
-}
-
-.text-about {
-  padding: 0 24px;
   animation-duration: 3s;
   animation-name: slidein;
 }
-  
-@keyframes slidein {
- from {
-   margin-left: 100%;
-   width: 300%;
- }
 
- to {
-   margin-left: 0%;
-   width: 100%;
- }
+@keyframes slidein {
+   from {
+     margin-left: 100%;
+     width: 300%;
+   }
+
+   to {
+     margin-left: 0%;
+     width: 100%;
+   }
 }
 
 .social {
@@ -494,4 +490,4 @@ li {
 
 .box img:hover {
   transform: scale(108%);
-  }
+}
