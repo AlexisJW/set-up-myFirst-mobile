@@ -274,7 +274,15 @@
   .button-submit:active {
     background-color: #172b4d;
   }
-}
+
+  .box img {
+    transition: transform 2s;
+  }
+  
+  .box img:hover {
+    transform: scale(112%);
+    }
+  }
 
 @media screen and (max-width: 768px) {
   .navbar-items {

@@ -469,3 +469,11 @@ li {
   resize: none;
   height: auto;
 }
+
+.box img {
+  transition: transform 2s;
+}
+
+.box img:hover {
+  transform: scale(108%);
+  }
