@@ -1,0 +1,267 @@
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #f4f5f7;
+  }
+
+  .header-at-top {
+    background-image: url(./image/header-bg-desktop.png);
+    background-size: cover;
+  }
+
+  .menu-phone {
+    display: none;
+  }
+
+  .header-containers {
+    background-color: #fff;
+  }
+
+  .logo {
+    padding-left: 143px;
+    color: #6070ff;
+    margin-top: 25px;
+  }
+
+  .navbar-items {
+    padding-right: 142px;
+    margin-top: 25px;
+  }
+
+  .navbar-items a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #6070ff;
+    text-decoration: none;
+    padding: 0 12px;
+  }
+
+  .primary-text,
+  .social,
+  .social-media-icons {
+    padding-left: 260px;
+  }
+
+  .text-about {
+    padding: 0 260px;
+  }
+
+  .work-container {
+    display: grid;
+    column-gap: 0;
+    row-gap: 88px;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    width: 60%;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+  }
+
+  #first-card {
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+
+  #second-card {
+    flex-direction: row-reverse;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+  }
+
+  #fourth-card {
+    flex-direction: row-reverse;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .more-details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 544px;
+    height: fit-content;
+    align-items: flex-start;
+  }
+
+  .snapshot {
+    left: 24px;
+    top: 24px;
+    border-radius: 1px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 114px 96px;
+    width: 100%;
+    background-color: #fff;
+    border-top-right-radius: 150px;
+  }
+
+  .social-media-icons2 {
+    padding-left: 0;
+    word-spacing: 20px;
+  }
+
+  .social-media-icons li,
+  .social-media-icons2 li {
+    display: inline;
+  }
+
+  .intro {
+    width: 40%;
+  }
+
+  .language-program {
+    width: 60%;
+    padding: 24px;
+    margin: 0;
+    align-items: flex-start;
+    height: 409px;
+  }
+
+  .language-program li {
+    padding: 0;
+    width: 100%;
+  }
+
+  .language-title {
+    padding-right: 31%;
+  }
+
+  .language-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .language-list li {
+    flex-direction: column;
+    height: fit-content;
+    padding: 20px;
+  }
+
+  .frameworks,
+  .skills {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dfe1e6;
+    padding: 18px 0;
+    width: 100%;
+  }
+
+  .frameworks-title,
+  .skills-title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .contact {
+    padding: 122px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./image/bg-contact.png);
+    background-size: cover;
+  }
+
+  .contact h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    padding-top: 103px;
+    padding-bottom: 12px;
+    width: 447px;
+    margin-left: 37px;
+  }
+
+  .contact p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ebebff;
+    text-align: center;
+    padding: 0 24px 30px 24px;
+    width: 447px;
+    margin-left: 37px;
+  }
+
+  .contact-form {
+    padding-left: 12px;
+    margin-left: 50px;
+    width: 480px;
+  }
+
+  #name,
+  #user-email,
+  #text-area {
+    width: 430px;
+    margin: 12px 0;
+    border: 1px solid #cfd8dc;
+    padding: 1rem 12px;
+  }
+
+  #text-area {
+    resize: none;
+    height: auto;
+  }
+
+  .button-submit {
+    width: 140px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+    border-radius: 8px;
+    background: #fff;
+    align-items: center;
+    padding: 12px 16px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+    border: 1px solid #cfd8dc;
+    display: block;
+  }
+
+  .button-submit:hover {
+    color: #fff;
+    background-color: #396df2;
+    cursor: pointer;
+  }
+
+  .button-submit:active {
+    background-color: #172b4d;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-items {
+    display: none;
+  }
+}
