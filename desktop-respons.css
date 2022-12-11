@@ -45,6 +45,20 @@
 
   .text-about {
     padding: 0 260px;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .work-container {
@@ -96,8 +110,7 @@
   }
 
   .snapshot {
-    left: 24px;
-    top: 24px;
+    margin: auto auto auto auto;
     border-radius: 1px;
   }
 
@@ -253,10 +266,21 @@
     color: #fff;
     background-color: #396df2;
     cursor: pointer;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
   }
 
   .button-submit:active {
     background-color: #172b4d;
+  }
+
+  .box img {
+    transition: transform 2s;
+  }
+
+  .box img:hover {
+    transform: scale(112%);
   }
 }
 

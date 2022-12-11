@@ -75,6 +75,7 @@
 - **[Build the first 2 sections of the mobile website using the template from figma]**
 - **[Add a contact form to your portfolio and the portfolio of your coding partner]**
 - **[Use media queries to make sure that your website displays correctly on desktop screens.]**
+- **[Add css transition.]**
 - **[Open a pull request.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
