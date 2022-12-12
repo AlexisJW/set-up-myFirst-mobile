@@ -85,7 +85,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://alexisjw.github.io/)
+- [Live Demo Link](https://alexisjw.github.io/set-up-myFirst-mobile/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
