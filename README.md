@@ -35,8 +35,8 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio: setup and mobile first / Desktop] <a name="about-project"></a>
-**[Portfolio: setup and mobile first]** Is a project to learn the ropes about designing mobile.
+# 📖 [Portfolio"></a>
+**[Portfolio]** Is a project to learn the ropes about Responsive Web Design.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -76,6 +76,7 @@
 - **[Add a contact form to your portfolio and the portfolio of your coding partner]**
 - **[Use media queries to make sure that your website displays correctly on desktop screens.]**
 - **[Add css transition.]**
+- **[Make my portfolio available online.]**
 - **[Open a pull request.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -84,7 +85,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Not Available
+- [Live Demo Link](https://alexisjw.github.io/set-up-myFirst-mobile/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
