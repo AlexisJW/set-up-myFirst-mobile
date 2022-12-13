@@ -194,7 +194,8 @@
     background-size: cover;
   }
 
-  .contact h2 {
+  .contact h1,
+  .contact h2{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
