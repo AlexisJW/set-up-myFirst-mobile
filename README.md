@@ -35,7 +35,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio"></a>
+# 📖 [Portfolio]></a>
 **[Portfolio]** Is a project to learn the ropes about Responsive Web Design.
 
 ## 🛠 Built With <a name="built-with"></a>
