@@ -1,5 +1,9 @@
 {
   "devDependencies": {
+    "babel-eslint": "file:../../../.nvm/versions/node/v18.5.0/lib/node_modules/babel-eslint",
+    "eslint": "file:../../../.nvm/versions/node/v18.5.0/lib/node_modules/eslint",
+    "eslint-config-airbnb-base": "file:../../../.nvm/versions/node/v18.5.0/lib/node_modules/eslint-config-airbnb-base",
+    "eslint-plugin-import": "file:../../../.nvm/versions/node/v18.5.0/lib/node_modules/eslint-plugin-import",
     "hint": "^2.0.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",

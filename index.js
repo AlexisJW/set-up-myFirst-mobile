@@ -11,7 +11,7 @@ closeBtn.addEventListener('click', () => {
   nav.classList.remove('open');
 });
 
-for(let i = 0; i < ancreLinks.length; i++) {
+for (let i = 0; i < ancreLinks.length; i += 1) {
   ancreLinks[i].addEventListener('click', () => {
     nav.classList.remove('open');
   });
