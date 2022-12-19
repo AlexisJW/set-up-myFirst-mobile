@@ -252,6 +252,10 @@ li {
   background-color: #396df2;
 }
 
+.menu-phone:hover {
+  cursor: pointer;
+}
+
 .about {
   display: flex;
   flex-direction: column;
