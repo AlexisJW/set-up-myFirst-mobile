@@ -23,7 +23,8 @@ nav {
 
 .nav-wrapper {
   position: fixed;
-  inset: 0;
+  left: -100%;
+  top: 0;
   height: 100vh;
   width: 100vw;
   -moz-transition: all 0.3s ease-in;
@@ -31,6 +32,10 @@ nav {
   -o-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+}
+
+.nav-wrapper.open {
+  left: 0;
 }
 
 .nav-bg {
