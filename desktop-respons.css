@@ -12,6 +12,10 @@
     display: none;
   }
 
+  .background-filter {
+    display: none;
+  }
+
   .header-containers {
     background-color: #fff;
   }
@@ -22,9 +26,27 @@
     margin-top: 25px;
   }
 
+  .nav-wrapper {
+    position: static;
+    height: auto;
+    width: auto;
+  }
+
+  .nav-bg {
+    display: none;
+  }
+
+  .close-menu {
+    display: none;
+  }
+
   .navbar-items {
     padding-right: 142px;
     margin-top: 25px;
+    display: block;
+    position: static;
+    padding-top: unset;
+    padding-bottom: unset;
   }
 
   .navbar-items a {
@@ -282,11 +304,5 @@
 
   .box img:hover {
     transform: scale(112%);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .navbar-items {
-    display: none;
   }
 }

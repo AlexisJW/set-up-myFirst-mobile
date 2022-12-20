@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github"
+    "\\.github",
+    "\\.github\\workflows"
   ],
+  "SelectedNode": "\\StyleSheet.css",
   "PreviewInSolutionExplorer": false
 }
