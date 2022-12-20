@@ -15,11 +15,11 @@
 	    <img src="./image/Enabled.png" alt="hamburger icon">
 	  </button>
 	  <div class="nav-wrapper">
-		<div class="nav-bg"></div>
-		<ul class="navbar-items">
-			<li><a href="#portfolio"> Portfolio </a></li>
-			<li><a href="#about"> About </a></li>
-			<li><a href="#contact"> Contact </a></li>
+	  <div class="nav-bg"></div>
+	    <ul class="navbar-items">
+		  <li><a href="#portfolio"> Portfolio </a></li>
+		  <li><a href="#about"> About </a></li>
+		  <li><a href="#contact"> Contact </a></li>
 		</ul>
 		<span class="close-menu">+</span>
 	  </div>
@@ -72,7 +72,7 @@
 			   <li>css</li>
 			   <li>javaScript</li>
 		   </ul>
-		   <button class="see-project" type="button">See Project</button>
+		   <button class="see-project" type="button" id="openModalBtn"> See Project </button>
 		 </div>
 	   </div>
 	   <div class="box" id="second-card">
@@ -186,12 +186,12 @@
            <li>
               <span class="language-title"> LANGUAGES </span>
               <button class="chevron-button" type="button">
-                 <img src="./image/chevron-down.png" alt="image chevron" class="chevron">
+                 <img src="./image/chevron-down.png" alt="" class="chevron"/>
               </button>
 			  <ul class="language-list">
 				  <li><img src="./image/JS-icon.png" alt="JS icon" class="language-icon"><span class="language-name"> JavaScript </span></li>
-				  <li><img src="./image/html-icon.png" alt="HTML icon" class="language-icon"><span class="language-name"> HTML </span></li>
-				  <li><img src="./image/css-icon.png" alt="CSS icon" class="language-icon"><span class="language-name"> CSS </span></li>
+				  <li><img src="./image/html-icon.png" alt="HTML icon" class="language-icon"><span class="language-name"> Html </span></li>
+				  <li><img src="./image/css-icon.png" alt="CSS icon" class="language-icon"><span class="language-name"> Css </span></li>
 			  </ul>
            </li>
            <li>
@@ -223,6 +223,43 @@
 		 <button type="submit" class="button-submit"> Get in Touch </button>
 	   </form>
   </section>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+	  <div class="primary-text-modal">
+		<span class="closeModal"> &times; </span>
+		<div class="works-elements">
+		  <h1 class="project-title"> Tonic </h1>
+		  <h2>
+			<div class="frame-client">
+			<span class="client"> CANOPY </span>
+			<img src="./image/Counter.png" alt="image card">
+			<span class="role"> Back End Dev </span>
+			<img src="./image/Counter.png" alt="">
+			<span class="year"> 2015 </span>
+			</div>
+		  </h2>
+		</div>
+		<img src="./image/snapshoot.png" alt="image card" class="snapshot">
+		<p class="details-modal">
+		  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+		</p>
+		<ul class="technologie-label">
+		  <li>html</li>
+		  <li>css</li>
+		  <li>javaScript</li>
+		</ul>
+		<div class="button-in-row">
+		  <button class="see-project-modal-live" type="button"> See Live 
+		    <img src="./image/icon-live.png" alt="Live icon">
+		  </button>
+		  <button class="see-project-modal-git" type="button" id="icon-gitModal"> See Source 
+		    <img src="./image/vector-git.png" alt="Github icon">
+		  </button>
+		</div>
+	  </div>
+    </div>
+  </div>
 
   <script src="index.js"></script>
 </body>

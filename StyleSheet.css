@@ -206,6 +206,7 @@ li {
 
 .snapshot {
   border-radius: 8px;
+  margin: auto auto auto auto;
 }
 
 .more-details {
@@ -562,4 +563,149 @@ li {
 
 .box img:hover {
   transform: scale(108%);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+  position: absolute;
+  width: 343px;
+  height: 713px;
+  left: calc(50% - 343px / 2);
+  top: 60px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.closeModal {
+  margin-right: 30px;
+  margin-left: 295px;
+  top: 25%;
+  bottom: 25%;
+  border: #67798E;
+  font-size: 28px;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.primary-text-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  width: 311px;
+  height: 84px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.button-in-row {
+  width: 311px;
+  height: 56px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin-top: 63px;
+  margin-bottom: 16px;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 14px;
+}
+
+.see-project-modal-live {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  background-color: #fff;
+  color: #396df2;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 22px;
+  gap: 10px;
+  width: 136px;
+  height: 48px;
+  left: 9px;
+  bottom: 4px;
+  border: 1px solid #6070FF;
+  border-radius: 8px;
+  position: absolute;
+  margin-left: 9px;
+}
+
+.see-project-modal-git {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  background-color: #fff;
+  color: #396df2;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 22px;
+  gap: 10px;
+  width: 160px;
+  height: 48px;
+  left: 9px;
+  bottom: 4px;
+  border: 1px solid #6070FF;
+  border-radius: 8px;
+  position: absolute;
+}
+
+.see-project-modal:hover {
+  color: #fff;
+  background-color: #396df2;
+}
+
+#icon-gitModal {
+  margin-left: 157px;
+}
+
+
+.details-modal {
+  width: 311px;
+  height: 220px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: auto auto auto auto;
 }
