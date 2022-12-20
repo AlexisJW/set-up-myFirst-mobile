@@ -55,13 +55,6 @@ nav {
   gap: 32px;
 }
 
-.navbar-items a {
-  font-size: 32px;
-  color: #fff;
-  font-weight: bolder;
-  text-decoration: none;
-}
-
 .close-menu {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -92,20 +85,22 @@ nav {
   font-size: 18px;
   line-height: 20px;
   color: #6070ff;
+  text-decoration: none;
 }
 
 .navbar-items a {
   height: 24px;
   left: 0px;
   right: 68px;
-  top: calc(50% - 24px/2);
+  top: calc(50% - 24px / 2);
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  text-decoration: none;
 }
 
 .header-at-top {
