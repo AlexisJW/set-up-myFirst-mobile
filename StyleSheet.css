@@ -90,7 +90,6 @@ nav {
 
 .navbar-items a {
   height: 24px;
-  left: 0px;
   right: 68px;
   top: calc(50% - 24px / 2);
   font-family: 'Poppins', sans-serif;
