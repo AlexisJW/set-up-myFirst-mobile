@@ -3,7 +3,7 @@ body {
 }
 
 .header-containers {
-  background-color: #fff;
+  background-color: #f7f7f9;
 }
 
 *,
@@ -32,6 +32,8 @@ nav {
   -o-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+  
+  
 }
 
 .nav-wrapper.open {
@@ -39,13 +41,12 @@ nav {
 }
 
 .nav-bg {
-  background-color: #6070ffdc;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  background-color: #5367f8b1;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   position: absolute;
   width: 100%;
   height: 100%;
-  inset: 0;
 }
 
 .navbar-items {
@@ -80,6 +81,10 @@ nav {
 .menu-phone {
   background-color: #b400;
   border: none;
+}
+
+.close-menu:hover {
+  cursor: pointer;
 }
 
 .logo {

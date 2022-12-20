@@ -12,6 +12,10 @@
     display: none;
   }
 
+  .background-filter {
+    display: none;
+  }
+
   .header-containers {
     background-color: #fff;
   }
