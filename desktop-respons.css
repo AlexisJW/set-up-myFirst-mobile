@@ -305,4 +305,129 @@
   .box img:hover {
     transform: scale(112%);
   }
+
+  .modal-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 12px;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    width: 1156px;
+    height: 1000px;
+    left: 142px;
+    top: 77px;
+  }
+
+  .title-close-in-row {
+    align-items: flex-start;
+    width: 1108px;
+    height: 40px;
+  }
+
+  .primary-text-modal {
+    width: 1108px;
+    height: 40px;
+  }
+
+  .snapshotModal {
+    width: 1108px;
+    height: 586px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .details-modal {
+    margin: auto 354px auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    position: absolute;
+    width: 778px;
+    height: 382px;
+    left: 24px;
+    top: 781px;
+  }
+
+  .closeModal {
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    bottom: 25%;
+    font-size: 30px;
+    border: 2px #67798e;
+    margin-left: 1000px;
+  }
+
+  .right-left-block-in-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .left-block {
+    width: 768px;
+    height: 382px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .right-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    position: absolute;
+    width: 306px;
+    height: 157px;
+    right: 24px;
+    top: 781px;
+  }
+
+  .button-in-row {
+    width: 306px;
+    height: 56px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin-top: 63px;
+    margin-bottom: 16px;
+    flex-direction: row;
+    align-items: center;
+    padding: auto auto;
+  }
+
+  .see-project-modal-live {
+    padding: 4px 25px;
+    width: 142px;
+    height: 40px;
+    left: 1px;
+    bottom: 16px;
+  }
+
+  .see-project-modal-git {
+    padding: 8px 12px;
+    width: 142px;
+    height: 40px;
+    right: 29px;
+    bottom: 16px;
+  }
+
+  #other-tech {
+    display: block;
+  }
 }
