@@ -91,7 +91,7 @@ data.forEach((item) => {
           </h2>
         </div>
       </div>
-      <span class="details"> A daily selection of privately personalized reads; no accounts or sign-ups required. </span>
+      <span class="details"> ${item.shortDescription} </span>
       <ul class="technologie-label">
         ${item.technologies.map((tech) => `<li>${tech}</li>`).join('')}
       </ul>
@@ -101,6 +101,25 @@ data.forEach((item) => {
 });
 
 worksSection.innerHTML = html;
+
+const projectButton = document.querySelectorAll('.see-project');
+
+projectButton.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector('#myModal');
+    const title = modal.querySelector('.project-title');
+    const img = modal.querySelector('img.snapshotModal');
+    const details = modal.querySelector('.details-modal');
+    const technologie = modal.querySelector('.technologie-label');
+
+    title.textContent = data[index].name;
+    img.src = data[index].featuredImage;
+    details.textContent = data[index].description;
+    technologie.innerHTML = data[index].technologies.map((item) => `<li>${item}</li>`).join('');
+
+    modal.style.display = 'block';
+  });
+});
 
 hamburgerButton.addEventListener('click', () => {
   nav.classList.add('open');

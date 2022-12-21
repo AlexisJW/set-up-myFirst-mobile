@@ -313,29 +313,34 @@
     align-items: center;
     padding: 16px;
     gap: 12px;
-    position: absolute;
+    position: static;
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    width: 1156px;
-    height: 1000px;
-    left: 142px;
-    top: 77px;
+    width: 82%;
+    margin: 77px auto;
+    height: auto;
+    min-height: 1000px;
   }
 
   .title-close-in-row {
     align-items: flex-start;
-    width: 1108px;
+    justify-content: space-between;
     height: 40px;
+    width: 100%;
+  }
+
+  .title-close-in-row .project-title {
+    width: auto;
   }
 
   .primary-text-modal {
-    width: 1108px;
+    width: 100%;
     height: 40px;
   }
 
   .snapshotModal {
-    width: 1108px;
+    width: 100%;
     height: 586px;
     left: 0px;
     top: 0px;
@@ -362,7 +367,6 @@
     bottom: 25%;
     font-size: 30px;
     border: 2px #67798e;
-    margin-left: 1000px;
   }
 
   .right-left-block-in-row {
@@ -372,8 +376,7 @@
   }
 
   .left-block {
-    width: 768px;
-    height: 382px;
+    width: 60%;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -385,30 +388,50 @@
     flex-grow: 0;
   }
 
+  .left-block > * {
+    position: static;
+    margin: auto;
+    width: auto;
+    height: auto;
+  }
+
   .right-block {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
     gap: 12px;
-    position: absolute;
-    width: 306px;
-    height: 157px;
-    right: 24px;
-    top: 781px;
+    width: 40%;
+  }
+
+  .right-block > * {
+    position: static;
+    width: auto;
+    margin: auto;
+    height: auto;
   }
 
   .button-in-row {
-    width: 306px;
-    height: 56px;
+    width: 100%;
     flex: none;
     order: 3;
     flex-grow: 0;
     margin-top: 63px;
     margin-bottom: 16px;
+    display: flex;
     flex-direction: row;
     align-items: center;
     padding: auto auto;
+    gap: 12px;
+  }
+
+  .button-in-row button {
+    position: static;
+    margin: 0;
+  }
+
+  #icon-gitModal {
+    margin: 0;
   }
 
   .see-project-modal-live {
