@@ -138,3 +138,37 @@ for (let i = 0; i < ancreLinks.length; i += 1) {
 closeModal.addEventListener('click', () => {
   theModal.style.display = 'none';
 });
+
+function showMessage(inputEl, message, error) {
+  const classList = error ? 'danger' : 'success';
+
+  inputEl.classList.add(classList);
+
+  if (error) {
+    const small = inputEl.parentNode.querySelector('small');
+    small.textContent = message;
+    small.style.display = 'block';
+  }
+}
+
+function showError(inputEl) {
+  const message = 'Your email should contain lowercase letter only.';
+
+  return showMessage(inputEl, message, true);
+}
+
+function showSuccess(inputEl) {
+  return showMessage(inputEl);
+}
+
+function validateEmail(email) {
+  const regEx = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+  return regEx.test(email);
+}
+
+//TODO: Select form from html
+//TODO: Add submit listener to form and use event.preventDefault()
+//TODO: Get email value and use validateEmail function to validate email, if true run showSuccess if false run showError while passing input(node) to the method.
+//TODO: Wrap your input:email inside a div and add <small></small> after input:email.
+//TODO: Style your <small>
