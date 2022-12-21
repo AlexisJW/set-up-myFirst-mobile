@@ -464,7 +464,7 @@ li {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #dfe1e6;
-  padding: 18px 0;
+  padding: 18px;
 }
 
 .frameworks-title,
@@ -650,7 +650,6 @@ li {
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin-top: 3px;
   margin-bottom: 16px;
   flex-direction: row;
   align-items: center;
