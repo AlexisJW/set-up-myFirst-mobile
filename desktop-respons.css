@@ -402,13 +402,7 @@
     padding: 0px;
     gap: 12px;
     width: 40%;
-  }
-
-  .right-block > * {
-    position: static;
-    width: auto;
-    margin: auto;
-    height: auto;
+    margin-left: 20px;
   }
 
   .button-in-row {
