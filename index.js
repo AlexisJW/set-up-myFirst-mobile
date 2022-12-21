@@ -19,8 +19,8 @@ const data = [
     maiores molestias repudiandae natus provident.`,
     featuredImage: './image/snapshoot.png',
     technologies: ['html', 'css', 'javaScript'],
-    linkToLive: '',
-    linkToSource: '',
+    linkToLive: 'https://alexisjw.github.io/set-up-myFirst-mobile/',
+    linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
     cardNo: '#first-card',
   },
   {
@@ -34,8 +34,8 @@ const data = [
     maiores molestias repudiandae natus provident.`,
     featuredImage: './image/snapshoot-1.png',
     technologies: ['html', 'css', 'javaScript'],
-    linkToLive: '',
-    linkToSource: '',
+    linkToLive: 'https://alexisjw.github.io/set-up-myFirst-mobile/',
+    linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
     cardNo: '#second-card',
   },
   {
@@ -49,8 +49,8 @@ const data = [
     maiores molestias repudiandae natus provident.`,
     featuredImage: './image/snapshoot-2.png',
     technologies: ['html', 'css', 'javaScript'],
-    linkToLive: '',
-    linkToSource: '',
+    linkToLive: 'https://alexisjw.github.io/set-up-myFirst-mobile/',
+    linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
     cardNo: '#third-card',
   },
   {
@@ -64,8 +64,8 @@ const data = [
     maiores molestias repudiandae natus provident.`,
     featuredImage: './image/snapshoot-3.png',
     technologies: ['html', 'css', 'javaScript'],
-    linkToLive: '',
-    linkToSource: '',
+    linkToLive: 'https://alexisjw.github.io/set-up-myFirst-mobile/',
+    linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
     cardNo: '#fourth-card',
   },
 ];
@@ -111,11 +111,15 @@ projectButton.forEach((button, index) => {
     const img = modal.querySelector('img.snapshotModal');
     const details = modal.querySelector('.details-modal');
     const technologie = modal.querySelector('.technologie-label');
+    const linkLiveDemo = modal.querySelector('a.link-live');
+    const linkGit = modal.querySelector('a.link-git');
 
     title.textContent = data[index].name;
     img.src = data[index].featuredImage;
     details.textContent = data[index].description;
     technologie.innerHTML = data[index].technologies.map((item) => `<li>${item}</li>`).join('');
+    linkLiveDemo.href = data[index].linkToLive;
+    linkGit.href = data[index].linkToSource;
 
     modal.style.display = 'block';
   });

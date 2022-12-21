@@ -291,7 +291,7 @@ li {
 .technologie-label li {
   list-style-type: none;
   display: inline;
-  padding: 4px 12px;
+  padding: 4px 4px;
   background: #ebebff;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
@@ -640,6 +640,7 @@ li {
 
 .snapshotModal {
   border-radius: 8px;
+  width: 311px;
   margin: auto auto auto auto;
 }
 
@@ -649,11 +650,12 @@ li {
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin-top: 63px;
+  margin-top: 3px;
   margin-bottom: 16px;
   flex-direction: row;
   align-items: center;
   padding: 12px 14px;
+  margin-top: 1px;
 }
 
 .see-project-modal-live {
@@ -673,11 +675,12 @@ li {
   width: 136px;
   height: 48px;
   left: 9px;
-  bottom: 4px;
+  bottom: 20px;
   border: 1px solid #6070ff;
   border-radius: 8px;
   position: absolute;
   margin-left: 9px;
+  text-decoration: none;
 }
 
 .see-project-modal-git {
@@ -697,10 +700,16 @@ li {
   width: 160px;
   height: 48px;
   left: 9px;
-  bottom: 4px;
+  bottom: 20px;
   border: 1px solid #6070ff;
   border-radius: 8px;
+  text-decoration: none;
   position: absolute;
+}
+
+.see-project-modal-live:hover,
+.see-project-modal-git:hover {
+  cursor: pointer;
 }
 
 .see-project-modal:hover {
@@ -723,7 +732,7 @@ li {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: auto auto auto auto;
+  margin-bottom: 12px;
 }
 
 #other-tech {
