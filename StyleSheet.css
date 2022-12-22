@@ -301,7 +301,8 @@ li {
   letter-spacing: 0.03em;
   color: #6070ff;
   margin-left: 5px;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   position: relative;
 }
 
