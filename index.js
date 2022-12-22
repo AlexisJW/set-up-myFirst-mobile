@@ -143,15 +143,15 @@ closeModal.addEventListener('click', () => {
   theModal.style.display = 'none';
 });
 
-const hasUpperCase = str => /[A-Z]/.test(str);
-const form = document.querySelector("#contact-form");
-const NAME_REQUIRED = "Please enter your name";
-const EMAIL_REQUIRED = "Please enter your email";
-const EMAIL_INVALID = "Please enter a correct email address format";
-const EMAIL_INVALID_UPPERCASE = "Please enter email address in lower case";
+const hasUpperCase = (str) => /[A-Z]/.test(str);
+const form = document.querySelector('#contact-form');
+const NAME_REQUIRED = 'Please enter your name';
+const EMAIL_REQUIRED = 'Please enter your email';
+const EMAIL_INVALID = 'Please enter a correct email address format';
+const EMAIL_INVALID_UPPERCASE = 'Please enter email address in lower case';
 
 function showMessage1(inputEl, message, type) {
-  const classList = type ? "success" : "error";
+  const classList = type ? 'success' : 'error';
 
   inputEl.classList.add(classList);
 
@@ -165,11 +165,11 @@ function showMessage1(inputEl, message, type) {
 }
 
 function showMessage(input, message, type) {
-	const TheMessage = input.parentNode.querySelector(".small-email");
-	TheMessage.innerText = message;
-	input.className = type ? "success" : "error";
+  const TheMessage = input.parentNode.querySelector('.small-email');
+  TheMessage.innerText = message;
+  input.className = type ? 'success' : 'error';
 
-	return type;
+  return type;
 }
 
 function showError(input, message) {
@@ -177,12 +177,12 @@ function showError(input, message) {
 }
 
 function showSuccess(input) {
-  return showMessage(input, "", true);
+  return showMessage(input, '', true);
 }
 
 function hasValue(input, message) {
-  if (input.value.trim() === "") {
-	return showError(input, message);
+  if (input.value.trim() === '') {
+    return showError(input, message);
   }
 
   return showSuccess(input);
@@ -193,7 +193,7 @@ function validateEmail(inputEmail, MyRequiredMsg, invalidMsg) {
     return false;
   }
 
-  const emailRegex =/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   const email = inputEmail.value.trim();
   if (!emailRegex.test(email)) {
@@ -203,17 +203,17 @@ function validateEmail(inputEmail, MyRequiredMsg, invalidMsg) {
   return true;
 }
 
-form.addEventListener("submit", function (event) {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
-  if (hasUpperCase(form.elements["user-email"].value.trim())) {
-    showError(form.elements["user-email"], EMAIL_INVALID_UPPERCASE);
+  if (hasUpperCase(form.elements['user-email'].value.trim())) {
+    showError(form.elements['user-email'], EMAIL_INVALID_UPPERCASE);
   } else {
-      let nameValid = hasValue(form.elements["name"], NAME_REQUIRED);
-      let emailValid = validateEmail(form.elements["user-email"], EMAIL_REQUIRED, EMAIL_INVALID);
+    const nameValid = hasValue(form.elements.name, NAME_REQUIRED);
+    const emailValid = validateEmail(form.elements['user-email'], EMAIL_REQUIRED, EMAIL_INVALID);
 
-      if (nameValid && emailValid) {
-        form.submit();
-        form.reset();
-      }
+    if (nameValid && emailValid) {
+      form.submit();
+      form.reset();
+    }
   }
 });
