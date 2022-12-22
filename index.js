@@ -150,20 +150,6 @@ const EMAIL_REQUIRED = 'Please enter your email';
 const EMAIL_INVALID = 'Please enter a correct email address format';
 const EMAIL_INVALID_UPPERCASE = 'Please enter email address in lower case';
 
-function showMessage1(inputEl, message, type) {
-  const classList = type ? 'success' : 'error';
-
-  inputEl.classList.add(classList);
-
-  if (type) {
-    const smallMessage = inputEl.parentNode.querySelector('.small-email');
-    smallMessage.textContent = message;
-    smallMessage.style.display = 'block';
-  }
-
-  return type;
-}
-
 function showMessage(input, message, type) {
   const TheMessage = input.parentNode.querySelector('.small-email');
   TheMessage.innerText = message;
