@@ -256,6 +256,15 @@
     margin: 12px 0;
     border: 1px solid #cfd8dc;
     padding: 1rem 12px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .small-email {
+    width: 430px;
+    margin: 12px 0;
+    padding: 1rem 1px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
   }
 
   #text-area {

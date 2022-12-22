@@ -554,6 +554,7 @@ li {
   margin: 12px 24px;
   border: 1px solid #cfd8dc;
   padding: 1rem 12px;
+  font-family: 'Poppins', sans-serif;
 }
 
 #text-area {
@@ -740,4 +741,13 @@ li {
 
 #other-tech {
   display: none;
+}
+
+.small-email {
+  color: #dc3545;
+  width: 85%;
+  margin: 12px 24px;
+  padding: 1rem 1px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
