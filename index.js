@@ -139,16 +139,33 @@ closeModal.addEventListener('click', () => {
   theModal.style.display = 'none';
 });
 
-function showMessage(inputEl, message, error) {
-  const classList = error ? 'danger' : 'success';
+const hasUpperCase = str => /[A-Z]/.test(str);
+const form = document.querySelector("#contact-form");
+const NAME_REQUIRED = "Please enter your name";
+const EMAIL_REQUIRED = "Please enter your email";
+const EMAIL_INVALID = "Please enter a correct email address format";
+const EMAIL_INVALID_UPPERCASE = "Please enter email address in lower case";
+
+function showMessage1(inputEl, message, type) {
+  const classList = type ? "success" : "error";
 
   inputEl.classList.add(classList);
 
-  if (error) {
-    const small = inputEl.parentNode.querySelector('small');
-    small.textContent = message;
-    small.style.display = 'block';
+  if (type) {
+    const smallMessage = inputEl.parentNode.querySelector('small');
+    smallMessage.textContent = message;
+    smallMessage.style.display = 'block';
   }
+
+  return type;
+}
+
+function showMessage(input, message, type) {
+	const TheMessage = input.parentNode.querySelector("small");
+	TheMessage.innerText = message;
+	input.className = type ? "success" : "error";
+
+	return type;
 }
 
 function showError(inputEl) {
@@ -157,17 +174,56 @@ function showError(inputEl) {
   return showMessage(inputEl, message, true);
 }
 
-function showSuccess(inputEl) {
-  return showMessage(inputEl);
+function showError(input, message) {
+  return showMessage(input, message, false);
 }
 
-function validateEmail(email) {
+function showSuccess(input) {
+  return showMessage(input, "", true);
+}
+
+function hasValue(input, message) {
+  if (input.value.trim() === "") {
+	return showError(input, message);
+  }
+
+  return showSuccess(input);
+}
+
+function validateEmail(inputEmail, MyRequiredMsg, invalidMsg) {
+  if (!hasValue(inputEmail, MyRequiredMsg)) {
+    return false;
+  }
+
+  const emailRegex =
+	/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  const email = inputEmail.value.trim();
+  if (!emailRegex.test(email)) {
+    return showError(inputEmail, invalidMsg);
+  }
+
+  return true;
+}
+
+function validateEmail1(email) {
   const regEx = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
 
   return regEx.test(email);
 }
 
 //TODO: Select form from html
+
+form.addEventListener("submit", function (event) {
+    alert("Submit press");
+  event.preventDefault();
+
+  let nameValid = hasValue(form.elements["name"], NAME_REQUIRED);
+  let emailValid = validateEmail(form.elements["user-email"], EMAIL_REQUIRED, EMAIL_INVALID);
+  if (nameValid && emailValid) {
+	alert("Demo only. No form was posted.");
+  }
+});
 //TODO: Add submit listener to form and use event.preventDefault()
 //TODO: Get email value and use validateEmail function to validate email, if true run showSuccess if false run showError while passing input(node) to the method.
 //TODO: Wrap your input:email inside a div and add <small></small> after input:email.
