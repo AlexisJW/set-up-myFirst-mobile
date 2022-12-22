@@ -203,3 +203,27 @@ form.addEventListener('submit', (event) => {
     }
   }
 });
+
+let emailInput = document.getElementById("user-email");
+let nameInput = document.getElementById("name");
+let areaInput = document.getElementById("text-area");
+
+let localObject = {name:"", email:"", textArea:""};
+
+emailInput.addEventListener('change', (event) => {
+  let emailValue = event.target.value.trim();
+  localObject.email = emailValue;
+  localStorage.setItem("data", JSON.stringify(localObject));
+});
+
+nameInput.addEventListener('change', (event) => {
+  let nameValue = event.target.value.trim();
+  localObject.name = nameValue;
+  localStorage.setItem("data", JSON.stringify(localObject));
+});
+
+areaInput.addEventListener('change', (event) => {
+  let areaValue = event.target.value.trim();
+  localObject.textArea = areaValue;
+  localStorage.setItem("data", JSON.stringify(localObject));
+});
