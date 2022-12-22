@@ -47,7 +47,8 @@
   </section>
   <section class="containers-works-section" id="portfolio">
    <div class="work-container">
-    </div>
+
+   </div>
    </section>
    <section class="about" id="about">
       <div class="intro">
@@ -111,9 +112,10 @@
 	  <h2> Contact me </h2>
 	  <p> If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it  </p>
 	  <form action="https://formspree.io/f/xyyvrjdz" method="post" class="contact-form" id="contact-form">
-		 <input type="text" name="name" placeholder="Enter your name" id="name" maxlength=30>
-		 <input type="email" name="user-email" placeholder="Enter your e-mail" id="user-email">
-		 <small></small>
+		 <input type="text" name="name" placeholder="Enter your name" id="name" maxlength=30 required>
+		 <small class="small-name"></small>
+		 <input type="email" name="user-email" placeholder="Enter your e-mail" id="user-email" required>
+		 <small class="small-email"></small>
 		 <textarea name="message" id="text-area" cols="30" rows="10" placeholder="Write your message here" maxlength=500 required></textarea>
 		 <button type="submit" class="button-submit"> Get in Touch </button>
 	   </form>
@@ -156,12 +158,16 @@
 		      <li> bootstrap </li>
 		    </ul>
 		    <div class="button-in-row">
-		      <button class="see-project-modal-live" type="button"> See Live 
-		        <img src="./image/icon-live.png" alt="Live icon">
-		      </button>
-		      <button class="see-project-modal-git" type="button" id="icon-gitModal"> See Source 
-		        <img src="./image/vector-git.png" alt="Github icon">
-		      </button>
+		      <a href="" class="link-live">
+			    <button class="see-project-modal-live" type="button"> See Live 
+		          <img src="./image/icon-live.png" alt="Live icon">
+		        </button>
+			  </a>
+		      <a href="" class="link-git">
+			    <button class="see-project-modal-git" type="button" id="icon-gitModal"> See Source 
+		          <img src="./image/vector-git.png" alt="Github icon">
+		        </button>
+			  </a>
 		    </div>
 		  </div>
 		</div>

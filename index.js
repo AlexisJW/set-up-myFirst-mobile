@@ -19,8 +19,8 @@ const data = [
     maiores molestias repudiandae natus provident.`,
     featuredImage: './image/snapshoot.png',
     technologies: ['html', 'css', 'javaScript'],
-    linkToLive: '',
-    linkToSource: '',
+    linkToLive: 'https://alexisjw.github.io/set-up-myFirst-mobile/',
+    linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
     cardNo: '#first-card',
   },
   {
@@ -34,8 +34,8 @@ const data = [
     maiores molestias repudiandae natus provident.`,
     featuredImage: './image/snapshoot-1.png',
     technologies: ['html', 'css', 'javaScript'],
-    linkToLive: '',
-    linkToSource: '',
+    linkToLive: 'https://alexisjw.github.io/set-up-myFirst-mobile/',
+    linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
     cardNo: '#second-card',
   },
   {
@@ -49,8 +49,8 @@ const data = [
     maiores molestias repudiandae natus provident.`,
     featuredImage: './image/snapshoot-2.png',
     technologies: ['html', 'css', 'javaScript'],
-    linkToLive: '',
-    linkToSource: '',
+    linkToLive: 'https://alexisjw.github.io/set-up-myFirst-mobile/',
+    linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
     cardNo: '#third-card',
   },
   {
@@ -64,8 +64,8 @@ const data = [
     maiores molestias repudiandae natus provident.`,
     featuredImage: './image/snapshoot-3.png',
     technologies: ['html', 'css', 'javaScript'],
-    linkToLive: '',
-    linkToSource: '',
+    linkToLive: 'https://alexisjw.github.io/set-up-myFirst-mobile/',
+    linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
     cardNo: '#fourth-card',
   },
 ];
@@ -152,7 +152,7 @@ function showMessage1(inputEl, message, type) {
   inputEl.classList.add(classList);
 
   if (type) {
-    const smallMessage = inputEl.parentNode.querySelector('small');
+    const smallMessage = inputEl.parentNode.querySelector('.small-email');
     smallMessage.textContent = message;
     smallMessage.style.display = 'block';
   }
@@ -161,17 +161,11 @@ function showMessage1(inputEl, message, type) {
 }
 
 function showMessage(input, message, type) {
-	const TheMessage = input.parentNode.querySelector("small");
+	const TheMessage = input.parentNode.querySelector(".small-email");
 	TheMessage.innerText = message;
 	input.className = type ? "success" : "error";
 
 	return type;
-}
-
-function showError(inputEl) {
-  const message = 'Your email should contain lowercase letter only.';
-
-  return showMessage(inputEl, message, true);
 }
 
 function showError(input, message) {
@@ -195,8 +189,7 @@ function validateEmail(inputEmail, MyRequiredMsg, invalidMsg) {
     return false;
   }
 
-  const emailRegex =
-	/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const emailRegex =/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   const email = inputEmail.value.trim();
   if (!emailRegex.test(email)) {
@@ -206,25 +199,17 @@ function validateEmail(inputEmail, MyRequiredMsg, invalidMsg) {
   return true;
 }
 
-function validateEmail1(email) {
-  const regEx = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
-
-  return regEx.test(email);
-}
-
-//TODO: Select form from html
-
 form.addEventListener("submit", function (event) {
-    alert("Submit press");
   event.preventDefault();
+  if (hasUpperCase(form.elements["user-email"].value.trim())) {
+    showError(form.elements["user-email"], EMAIL_INVALID_UPPERCASE);
+  } else {
+      let nameValid = hasValue(form.elements["name"], NAME_REQUIRED);
+      let emailValid = validateEmail(form.elements["user-email"], EMAIL_REQUIRED, EMAIL_INVALID);
 
-  let nameValid = hasValue(form.elements["name"], NAME_REQUIRED);
-  let emailValid = validateEmail(form.elements["user-email"], EMAIL_REQUIRED, EMAIL_INVALID);
-  if (nameValid && emailValid) {
-	alert("Demo only. No form was posted.");
+      if (nameValid && emailValid) {
+        form.submit();
+        form.reset();
+      }
   }
 });
-//TODO: Add submit listener to form and use event.preventDefault()
-//TODO: Get email value and use validateEmail function to validate email, if true run showSuccess if false run showError while passing input(node) to the method.
-//TODO: Wrap your input:email inside a div and add <small></small> after input:email.
-//TODO: Style your <small>

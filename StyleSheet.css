@@ -291,7 +291,7 @@ li {
 .technologie-label li {
   list-style-type: none;
   display: inline;
-  padding: 4px 12px;
+  padding: 4px 4px;
   background: #ebebff;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
@@ -300,6 +300,10 @@ li {
   font-size: 12px;
   letter-spacing: 0.03em;
   color: #6070ff;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
 .see-project {
@@ -464,7 +468,7 @@ li {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #dfe1e6;
-  padding: 18px 0;
+  padding: 18px;
 }
 
 .frameworks-title,
@@ -574,7 +578,7 @@ li {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow-y: scroll;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -588,9 +592,9 @@ li {
   gap: 12px;
   position: absolute;
   width: 343px;
-  height: 713px;
+  height: 723px;
   left: calc(50% - 343px / 2);
-  top: 60px;
+  top: 5px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -640,20 +644,21 @@ li {
 
 .snapshotModal {
   border-radius: 8px;
+  width: 311px;
   margin: auto auto auto auto;
 }
 
 .button-in-row {
   width: 311px;
-  height: 56px;
+  height: 53px;
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin-top: 63px;
   margin-bottom: 16px;
   flex-direction: row;
   align-items: center;
   padding: 12px 14px;
+  margin-top: 1px;
 }
 
 .see-project-modal-live {
@@ -673,11 +678,12 @@ li {
   width: 136px;
   height: 48px;
   left: 9px;
-  bottom: 4px;
+  bottom: 20px;
   border: 1px solid #6070ff;
   border-radius: 8px;
   position: absolute;
   margin-left: 9px;
+  text-decoration: none;
 }
 
 .see-project-modal-git {
@@ -697,10 +703,16 @@ li {
   width: 160px;
   height: 48px;
   left: 9px;
-  bottom: 4px;
+  bottom: 20px;
   border: 1px solid #6070ff;
   border-radius: 8px;
+  text-decoration: none;
   position: absolute;
+}
+
+.see-project-modal-live:hover,
+.see-project-modal-git:hover {
+  cursor: pointer;
 }
 
 .see-project-modal:hover {
@@ -723,9 +735,17 @@ li {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: auto auto auto auto;
+  margin-bottom: 12px;
 }
 
 #other-tech {
   display: none;
+}
+
+.small-email {
+  color: #dc3545;
+  width: 85%;
+  margin: 12px 24px;
+  padding: 1rem 1px;
+  font-size: 16px;
 }

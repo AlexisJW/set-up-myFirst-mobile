@@ -258,6 +258,13 @@
     padding: 1rem 12px;
   }
 
+  .small-email {
+    width: 430px;
+    margin: 12px 0;
+    padding: 1rem 1px;
+    font-size: 18px;
+  }
+
   #text-area {
     resize: none;
     height: auto;
@@ -319,8 +326,8 @@
     border-radius: 16px;
     width: 82%;
     margin: 77px auto;
-    height: auto;
-    min-height: 1000px;
+    height: 900px;
+    min-height: 900px;
   }
 
   .title-close-in-row {
@@ -398,11 +405,26 @@
   .right-block {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 0;
     gap: 12px;
     width: 40%;
     margin-left: 20px;
+    align-items: center;
+  }
+
+  .technologie-label li {
+    list-style-type: none;
+    display: inline;
+    padding: 4px 14px;
+    background: #ebebff;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+    margin-left: 3px;
   }
 
   .button-in-row {
@@ -410,13 +432,14 @@
     flex: none;
     order: 3;
     flex-grow: 0;
-    margin-top: 63px;
+    margin-top: 13px;
     margin-bottom: 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: auto auto;
     gap: 12px;
+    justify-content: flex-end;
   }
 
   .button-in-row button {
@@ -436,11 +459,15 @@
     bottom: 16px;
   }
 
+  .link-live,
+  .link-git {
+    text-decoration: none;
+  }
+
   .see-project-modal-git {
-    padding: 8px 12px;
+    padding: 8px 9px;
     width: 142px;
     height: 40px;
-    right: 29px;
     bottom: 16px;
   }
 
