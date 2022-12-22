@@ -200,42 +200,42 @@ form.addEventListener('submit', (event) => {
     if (nameValid && emailValid) {
       form.submit();
       form.reset();
-      localStorage.setItem("data", JSON.stringify({name:"", email:"", textArea:""}));
+      localStorage.setItem('data', JSON.stringify({ name: '', email: '', textArea: '' }));
     }
   }
 });
 
-let emailInput = document.getElementById("user-email");
-let nameInput = document.getElementById("name");
-let areaInput = document.getElementById("text-area");
+const emailInput = document.getElementById('user-email');
+const nameInput = document.getElementById('name');
+const areaInput = document.getElementById('text-area');
 
-let localObject = {name:"", email:"", textArea:""};
+const localObject = { name: '', email: '', textArea: '' };
 
 emailInput.addEventListener('change', (event) => {
-  let emailValue = event.target.value.trim();
+  const emailValue = event.target.value.trim();
   localObject.email = emailValue;
   const previous = JSON.parse(localStorage.getItem('data'));
   localObject.name = previous?.name || '';
   localObject.textArea = previous?.textArea || '';
-  localStorage.setItem("data", JSON.stringify(localObject));
+  localStorage.setItem('data', JSON.stringify(localObject));
 });
 
 nameInput.addEventListener('change', (event) => {
-  let nameValue = event.target.value.trim();
+  const nameValue = event.target.value.trim();
   localObject.name = nameValue;
   const previous = JSON.parse(localStorage.getItem('data'));
   localObject.email = previous?.email || '';
   localObject.textArea = previous?.textArea || '';
-  localStorage.setItem("data", JSON.stringify(localObject));
+  localStorage.setItem('data', JSON.stringify(localObject));
 });
 
 areaInput.addEventListener('change', (event) => {
-  let areaValue = event.target.value.trim();
+  const areaValue = event.target.value.trim();
   localObject.textArea = areaValue;
   const previous = JSON.parse(localStorage.getItem('data'));
   localObject.name = previous?.name || '';
   localObject.email = previous?.email || '';
-  localStorage.setItem("data", JSON.stringify(localObject));
+  localStorage.setItem('data', JSON.stringify(localObject));
 });
 
 window.addEventListener('load', () => {
