@@ -409,7 +409,7 @@
     list-style-type: none;
     display: inline;
     padding: 4px 14px;
-    background: white;
+    background: #ebebff;
     border-radius: 8px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -417,6 +417,7 @@
     font-size: 12px;
     letter-spacing: 0.03em;
     color: #6070ff;
+    margin-left: 3px;
   }
 
   .button-in-row {
