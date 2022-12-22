@@ -111,11 +111,15 @@ projectButton.forEach((button, index) => {
     const img = modal.querySelector('img.snapshotModal');
     const details = modal.querySelector('.details-modal');
     const technologie = modal.querySelector('.technologie-label');
+    const linkLiveDemo = modal.querySelector('a.link-live');
+    const linkGit = modal.querySelector('a.link-git');
 
     title.textContent = data[index].name;
     img.src = data[index].featuredImage;
     details.textContent = data[index].description;
     technologie.innerHTML = data[index].technologies.map((item) => `<li>${item}</li>`).join('');
+    linkLiveDemo.href = data[index].linkToLive;
+    linkGit.href = data[index].linkToSource;
 
     modal.style.display = 'block';
   });
