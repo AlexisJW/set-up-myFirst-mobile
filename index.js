@@ -200,6 +200,48 @@ form.addEventListener('submit', (event) => {
     if (nameValid && emailValid) {
       form.submit();
       form.reset();
+      localStorage.setItem('data', JSON.stringify({ name: '', email: '', textArea: '' }));
     }
   }
+});
+
+const emailInput = document.getElementById('user-email');
+const nameInput = document.getElementById('name');
+const areaInput = document.getElementById('text-area');
+
+const localObject = { name: '', email: '', textArea: '' };
+
+emailInput.addEventListener('change', (event) => {
+  const emailValue = event.target.value.trim();
+  localObject.email = emailValue;
+  const previous = JSON.parse(localStorage.getItem('data'));
+  localObject.name = previous?.name || '';
+  localObject.textArea = previous?.textArea || '';
+  localStorage.setItem('data', JSON.stringify(localObject));
+});
+
+nameInput.addEventListener('change', (event) => {
+  const nameValue = event.target.value.trim();
+  localObject.name = nameValue;
+  const previous = JSON.parse(localStorage.getItem('data'));
+  localObject.email = previous?.email || '';
+  localObject.textArea = previous?.textArea || '';
+  localStorage.setItem('data', JSON.stringify(localObject));
+});
+
+areaInput.addEventListener('change', (event) => {
+  const areaValue = event.target.value.trim();
+  localObject.textArea = areaValue;
+  const previous = JSON.parse(localStorage.getItem('data'));
+  localObject.name = previous?.name || '';
+  localObject.email = previous?.email || '';
+  localStorage.setItem('data', JSON.stringify(localObject));
+});
+
+window.addEventListener('load', () => {
+  const data = JSON.parse(localStorage.getItem('data'));
+
+  nameInput.value = data?.name || '';
+  emailInput.value = data?.email || '';
+  areaInput.value = data?.textArea || '';
 });
